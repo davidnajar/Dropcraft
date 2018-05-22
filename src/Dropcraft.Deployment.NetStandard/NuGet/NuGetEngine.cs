@@ -263,7 +263,11 @@ namespace Dropcraft.Deployment.NuGet
         public Task InstallPackage(RemoteMatch match, string path)
         {
             var packageIdentity = new PackageIdentity(match.Library.Name, match.Library.Version);
-
+            if (match.Provider==null)
+            {
+                Console.WriteLine("Invalid match provider!");
+                throw new Exception("invalid match provider for " + packageIdentity);
+            }
             var versionFolderPathContext = new VersionFolderPathContext(
                 packageIdentity,
                 path,

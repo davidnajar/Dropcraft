@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Dropcraft.Common;
@@ -71,6 +72,11 @@ namespace Dropcraft.Deployment.Core
                 {
                     var fxName = NuGetEngine.GetMostCompatibleFramework(_deploymentContext.TargetFramework,
                         Directory.EnumerateDirectories(libFolder).Select(Path.GetFileName));
+                    if (fxName == null)
+                    {
+                        Console.WriteLine($"Skipping package {packageId.Id} because unkown framework present on PKG");
+                        return files;
+                    }
                     libFxFolder = Path.Combine(libFolder, fxName);
                     if (!Directory.Exists(libFxFolder))
                     {

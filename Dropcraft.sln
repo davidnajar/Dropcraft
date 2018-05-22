@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dropcraft.Deployment", "Dropcraft.Deployment", "{0D3543CF-984B-49DE-9ACB-08D078BD9F28}"
 EndProject
@@ -83,5 +83,8 @@ Global
 		{B35C7FB4-5643-47F3-80FB-C55A0A04B736} = {0D3543CF-984B-49DE-9ACB-08D078BD9F28}
 		{5FDA3117-C1E9-4294-8E09-894B173EE3B7} = {0D3543CF-984B-49DE-9ACB-08D078BD9F28}
 		{D0E6DBE0-49B1-4EA8-B1ED-C449FB853C1F} = {D7152C7F-8A11-4E64-BAB1-2B7897E444E4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9FB7D40-5A38-49E2-8D0D-01F5AEEDFB7E}
 	EndGlobalSection
 EndGlobal
