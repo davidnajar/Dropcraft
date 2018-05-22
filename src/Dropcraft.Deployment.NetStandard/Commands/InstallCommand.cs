@@ -50,6 +50,10 @@ namespace Dropcraft.Deployment.Commands
 
             _updatePackages = cmdApp.Option("--update-packages", "Always try to update packages from the remote sources", CommandOptionType.NoValue);
             _allowDowngrades = cmdApp.Option("--allow-downgrades", "Allow packages downgrades", CommandOptionType.NoValue);
+
+             cmdApp.Option("--debug", "Waits for the debugger to be attached", CommandOptionType.NoValue);
+            cmdApp.Option("--verbose", "Set outputLog to verbose level", CommandOptionType.NoValue);
+
         }
 
         /// <summary>
