@@ -1,7 +1,10 @@
+
 # Dropcraft
+Forked from https://github.com/Dropcraft/Dropcraft
 NuGet-based deployment and application composition framework for .NET and .NET Core. The main goal of the framework is to allow an application composition directly from the NuGet packages.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/llop6waxys92d873/branch/master?svg=true)](https://ci.appveyor.com/project/AndreiMarukovich/dropcraft/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/ef7mmm0cj8tgasy9/branch/master?svg=true)](https://ci.appveyor.com/project/davidnajar/dropcraft/branch/master)
+
 
 ## Features
 
