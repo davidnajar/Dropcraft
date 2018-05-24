@@ -4,9 +4,8 @@ var configuration = Argument("configuration", "Release");
 #Tool "xunit.runner.console"
 #Tool "GitVersion.CommandLine"
 #Tool "ilmerge"
-
-#Addin "Cake.DocFx"
-#Tool "docfx.console"
+#addin nuget:?package=Cake.DocFx&version=0.6.0
+#tool nuget:?package=docfx.console&version=2.32.0
 
 
 //////////////////////////////////////////////////////////////////////
